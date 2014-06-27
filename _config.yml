@@ -11,7 +11,7 @@ auto: true
 title: 移动魔盒工作室
 subTitle: 专注于移动App开发
 description: 这是 PIZn 的又一个博客，它是基于 Jekyll 搭建起来的。在这里，不仅仅是用来快速记录工作，学习，生活的一点一滴的地方，更是 PIZn 对 Jekyll 的学习和使用的一次有意义的实践。
-url: http://pizn.github.io
+url: http://mmagicbox.github.io
 feed: /atom.xml
 
 #菜单配置
@@ -25,7 +25,7 @@ nav:
   - text: 联系我
     url: http://www.zhanxin.info/contact.html
   - text: 博客源代码
-    url: https://github.com/pizn/pizn.github.com
+    url: https://github.com/pizn/mmagicbox.github.com
 
 #theme config
 themes: /themes/violet
