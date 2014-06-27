@@ -4,6 +4,8 @@ plugins: ./_plugins
 paginate: 8
 
 safe: false
+# 当修改文件时重新生成站点  
+auto: true  
 
 #站点基础配置
 title: 移动魔盒工作室
