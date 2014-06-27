@@ -50,7 +50,7 @@ follow me:
 <pre class="html" name="colorcode">
 //为了避免代码被编译，我在这里的 Jekyll 语法中间加上反斜干
 {\% if(page.isContact) %\}
-    &lt;section class="violet-photo"&gt;
+    &lt;section class="mmagicbox-photo"&gt;
         &lt;img src="xxxx.jpg" alt="xxx" /&gt;
     &lt;/section&gt;
 {\% else %\}

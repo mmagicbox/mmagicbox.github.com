@@ -130,7 +130,7 @@ a:hover {
     width: 100%;
     height: auto;
 }
-#violet-head {
+#mmagicbox-head {
     width: 100%;
     height: 260px;
     background-color: #fff;
@@ -139,7 +139,7 @@ a:hover {
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
-#violet-header {
+#mmagicbox-header {
     width: 720px;
     height: 210px;
     margin: 0 auto;
@@ -167,7 +167,7 @@ a:hover {
     font-family: Georgia, "Times New Roman", "Hiragino Mincho Pro", "Songti SC", "SimSun", sans-serif;
     font-style: italic;
 }
-#violet-nav {
+#mmagicbox-nav {
     width: 100%;
     height: 48px;
     background: rgba(255,255,255,0.2);
@@ -208,7 +208,7 @@ a:hover {
     text-decoration: none;
 }
 
-#violet-main {
+#mmagicbox-main {
     width: 100%;
     height: auto;
 }
@@ -220,12 +220,12 @@ a:hover {
 .main-article:nth-child(2n) {
     background: #fff;
 }
-.violet-post {
+.mmagicbox-post {
     width: 720px;
     padding: 50px 0;
     margin: 0 auto;
 }
-#violet-paging {
+#mmagicbox-paging {
     width: 100%;
     height: auto;
     padding: 10px 0;
@@ -289,7 +289,7 @@ a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-#violet-foot {
+#mmagicbox-foot {
     width: 100%;
     height: 220px;
     border-top: 1px solid #1c1c22;
@@ -406,12 +406,12 @@ a:hover {
     text-decoration: none;
     background: rgba(0, 0, 0, 0.8);
 }
-.violet-title {
+.mmagicbox-title {
     padding: 30px 0;
     width: 100%;
     background: #f6f6f6;
 }
-.violet-title .violet-title-item {
+.mmagicbox-title .mmagicbox-title-item {
     width: 720px;
     font-size: 32px;
     margin: 0 auto;

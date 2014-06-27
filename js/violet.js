@@ -177,7 +177,7 @@ violet.goTop = {
         });
     },
     run: function() {
-        var that = this, topLink = $('<a id="' + that.nodeName + '" href="#" class="violet-backtop">Top</a>');
+        var that = this, topLink = $('<a id="' + that.nodeName + '" href="#" class="mmagicbox-backtop">Top</a>');
         topLink.appendTo($('body'));
         topLink.css({
             'display': 'none',
