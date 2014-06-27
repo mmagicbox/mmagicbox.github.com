@@ -16,10 +16,10 @@ feed: /atom.xml
 
 #菜单配置
 nav:
-  - text: 作品
-    url: /works.html
   - text: 首页
     url: /index.html
+  - text: 作品
+    url: /works.html
   - text: 文章归档
     url: /archives.html
   - text: 联系我
