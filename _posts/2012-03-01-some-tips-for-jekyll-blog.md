@@ -5,7 +5,7 @@ description: 也许你已经懂得如何使用 Jekyll 搭建一个简单的博�
 keywords: Jekyll, blog, 博客, YAML, include, layout, aside
 ---
 
-在搭建 <strong>PIZn.Me</strong> 的时候，我就尝试更好地规划自己的这个 <strong>Jekyll</strong> 博客。回过头来，总结了几点个人觉得有用的小技巧，希望对 <strong>Jekyll</strong> 爱好者有所帮助，也欢迎一起学习讨论。
+在搭建 <strong>MmagicBox</strong> 的时候，我就尝试更好地规划自己的这个 <strong>Jekyll</strong> 博客。回过头来，总结了几点个人觉得有用的小技巧，希望对 <strong>Jekyll</strong> 爱好者有所帮助，也欢迎一起学习讨论。
 
 ###一、使用 include 拆分你的页面结构
 

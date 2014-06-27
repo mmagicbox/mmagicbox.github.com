@@ -24,7 +24,7 @@ keywords: Jekyll, Demo, Web Development, head, foot, content
 
 恩，也许你还不知道啥是 <a href="http://www.jekyllrb.com" target="_blank"
 rel="nofollow" title="Jekyll"><strong>Jekyll</strong></a>，没关系，
-<strong>PIZn.Me</strong> 就是使用 <strong>Jekyll</strong> 搭建起来的。你可以在这里找到 <strong>Jekyll</strong> 的很多相关文章。
+<strong>MmagicBox</strong> 就是使用 <strong>Jekyll</strong> 搭建起来的。你可以在这里找到 <strong>Jekyll</strong> 的很多相关文章。
 
 Ok，基于平时自己遇到的一些问题，还有 Jekyll 的方便性，我尝试着这样去做页面的开发，舒服多了，效率也提上来了。
 

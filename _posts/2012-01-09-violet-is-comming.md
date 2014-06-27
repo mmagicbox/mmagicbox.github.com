@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Violet 2.0 开始在 PIZn.Me 实践
+title: Violet 2.0 开始在 MmagicBox 实践
 description: Violet 是 PIZn 的网站界面设计思想。在 2.0 版本中，通过对 html5 和 css3 的实践，来实现需要图片完成的界面。
 keywords: Violet, PIZn, html5, css3, Jekyll, GitHub, Javascript
 ---
-经过 2 个星期空闲时间的努力，<strong>Violet 2.0</strong> 终于登陆 PIZn 在 GitHub 搭建的个人博客。对，就是 PIZn.Me 。
+经过 2 个星期空闲时间的努力，<strong>Violet 2.0</strong> 终于登陆 PIZn 在 GitHub 搭建的个人博客。对，就是 MmagicBox 。
 
 ####什么是 Violet ？
 
@@ -18,7 +18,7 @@ keywords: Violet, PIZn, html5, css3, Jekyll, GitHub, Javascript
 
 Violet 2.0 使用了 <strong>html5</strong> 和 <strong>css3</strong> 来制作页面，暂时也是永远只对高级浏览器 Chrome, Firefox, safari 有良好的表现，如果您是使用 IE 的浏览器，那么看到的只有一个一个方块，尽快改浏览器吧。我也不想做兼容了。
 
-2.0 版本话说已经策划了很久，在学校的时候就尝试着在 <strong>Wordpress</strong> 主题上做修改。而今天，<strong>PIZn.Me</strong> 是基于 <strong>Jekyll</strong> 构建出来的，这是一个新的开始。Violet 2.0 也是我对Jekyll 的学习和使用的结晶。
+2.0 版本话说已经策划了很久，在学校的时候就尝试着在 <strong>Wordpress</strong> 主题上做修改。而今天，<strong>MmagicBox</strong> 是基于 <strong>Jekyll</strong> 构建出来的，这是一个新的开始。Violet 2.0 也是我对Jekyll 的学习和使用的结晶。
 
 ####2012年
 
