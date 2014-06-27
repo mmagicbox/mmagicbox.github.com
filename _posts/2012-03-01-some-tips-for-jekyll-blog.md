@@ -25,7 +25,7 @@ class="v-code">{\{ content }\}</code> 读取中间这部分的内容。而中间
 
 例如下面的代码片段：
 <pre class="html" name="colorcode">
-name: PIZn
+name: MmagicBox
 age: 24
 school:
     name: GDUT

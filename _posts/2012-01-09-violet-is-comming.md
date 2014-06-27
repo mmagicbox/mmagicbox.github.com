@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Violet 2.0 开始在 MmagicBox 实践
-description: Violet 是 PIZn 的网站界面设计思想。在 2.0 版本中，通过对 html5 和 css3 的实践，来实现需要图片完成的界面。
-keywords: Violet, PIZn, html5, css3, Jekyll, GitHub, Javascript
+description: Violet 是 MmagicBox 的网站界面设计思想。在 2.0 版本中，通过对 html5 和 css3 的实践，来实现需要图片完成的界面。
+keywords: Violet, MmagicBox, html5, css3, Jekyll, GitHub, Javascript
 ---
-经过 2 个星期空闲时间的努力，<strong>Violet 2.0</strong> 终于登陆 PIZn 在 GitHub 搭建的个人博客。对，就是 MmagicBox 。
+经过 2 个星期空闲时间的努力，<strong>Violet 2.0</strong> 终于登陆 MmagicBox 在 GitHub 搭建的个人博客。对，就是 MmagicBox 。
 
 ####什么是 Violet ？
 
-<strong>Violet</strong> 是 2010 年在编写 PIZn.Net 的时候想到的一个设计思路。因为我喜欢一种颜色--紫色，喜欢一种花--紫罗兰，喜欢一种美的感觉, 故取名为 Violet 。
+<strong>Violet</strong> 是 2010 年在编写 MmagicBox.Net 的时候想到的一个设计思路。因为我喜欢一种颜色--紫色，喜欢一种花--紫罗兰，喜欢一种美的感觉, 故取名为 Violet 。
 
 而实际上，你能看到的只是网站的界面，有紫色，有绿色，各种很花的图案等。然而在其背后的那一堆代码，才是 Violet 的沉淀。设计的美感有时候很微妙，遇到了抓都有可能抓不住。但一旦你拥有了某一个信念，它就自然而然地表现出来了。
 
