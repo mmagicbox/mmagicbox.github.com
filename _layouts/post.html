@@ -1,24 +1,39 @@
 ---
-single: true
+layout: default
+isPost: true
+comment: true
 ---
-{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
-{% include head.html %}
-<body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
-  <nav role="navigation">{% include navigation.html %}</nav>
-  <div class="wrapper_single">
-    <div class="container">
-      <article class="span8 offset2" role="article">
-        {% include article.html %}
-        {% if site.disqus_short_name and page.comments == true %}
-          <div class="article-format">
-            <h1>Comments</h1>
-            <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-          </div>
-        {% endif %}
-      </article>
+<article class="main-article main-article-page">
+    <div class="violet-title">
+        <h3 class="violet-title-item">{{ page.title }}</h3>
     </div>
-  </div>
-  {% include footer.html %}
-  {% include after_footer.html %}
-</body>
-</html>
+    <div class="violet-post">
+        <p class="main-article-meta"><time pubdate="{{ rpost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ page.date | date_to_utc | date: "%Y-%m-%d" }}</time></p>
+        <div class="main-article-contant">
+            {{ content }}
+        </div>
+    </div>
+</article>
+<nav class="pagination fn-clear" id="violet-paging">
+    <div class="pagination-list">
+        {% if page.previous %}
+        <a class="prev" href="{{ page.previous.url }}" rel="bookmark"><i class="fa fa-chevron-circle-left"></i>{{ page.previous.title | truncatewords:5 }}</a>
+        {% endif %}
+        {% if page.next %}
+        <a class="next" href="{{ page.next.url }}" rel="bookmark">{{ page.next.title | truncatewords:5 }}<i class="fa fa-chevron-circle-right"></i></a>
+        {% endif %}
+    </div>
+</nav>
+<div class="comment">
+    {% if site.disqus.config %}
+        <div class="comment-cnt">
+            <div id="disqus_thread"></div>
+        </div>
+    {% else %}
+        {% if site.duoshuo.config %}
+        <div class="comment-cnt">
+            <div class="ds-thread"></div>
+        </div>
+        {% endif %}
+    {% endif %}
+</div>
