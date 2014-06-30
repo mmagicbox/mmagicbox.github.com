@@ -20,12 +20,13 @@ nav:
     url: /index.html
   - text: 作品
     url: /works.html
+  - text: 工具
+    url: /tools.md
   - text: 文章归档
     url: /archives.html
   - text: 联系我
     url: /contact.html
-  - text: 工具
-    url: /tools.md
+
 
 #theme config
 themes: /themes/violet
