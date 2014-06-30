@@ -40,25 +40,25 @@ headimg:
 #关注我
 follow:
   - class: fa-google-plus
-    url: http://www.zhanxin.info
+    url: http://weibo.com/mmagicbox
   - class: fa-facebook
-    url: http://www.zhanxin.info
+    url: http://weibo.com/mmagicbox
   - class: fa-github
-    url: http://github.com/pizn
+    url: http://weibo.com/mmagicbox
   - class: fa-weibo
-    url: http://weibo.com/pizner
+    url: http://weibo.com/mmagicbox
   - class: fa-renren
-    url: http://www.zhanxin.info
+    url: http://weibo.com/mmagicbox
   - class: fa-pinterest
-    url: http://www.zhanxin.info
+    url: http://weibo.com/mmagicbox
   - class: fa-twitter
-    url: http://www.zhanxin.info
+    url: http://weibo.com/mmagicbox
   - class: fa-rss
-    url: http://www.zhanxin.info
+    url: http://weibo.com/mmagicbox
 
 #作者信息
 author:
-  link: http://www.zhanxin.info/contact.html
+  link: http://mmagicbox.github.io/contact.html
   img: http://tp2.sinaimg.cn/1832671293/180/40020872447/1
 
 #评论信息
