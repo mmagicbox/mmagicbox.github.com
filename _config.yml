@@ -25,7 +25,7 @@ nav:
   - text: 联系我
     url: /contact.html
   - text: 工具
-    url: /README.md
+    url: /tools.md
 
 #theme config
 themes: /themes/violet

@@ -4,6 +4,7 @@
 
 This is the source code for <a href="http://www.zhanxin.info" target="_blank" title="zhanxin.info">zhanxin.info</a> -- powered by <a href="http://jekyllrb.com" target="_blank" title="jekyll">Jekyll</a>. And this blog use for fast recording my work, learning and life.
 
+
 ##如何达到快速呢？
 
 发表一篇文章，就像写代码一样，直接在编辑器上进行书写和总结。不需要进入网站的后台什么的，就可以完成文章的编辑了。
