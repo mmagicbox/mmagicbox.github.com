@@ -1,47 +1,46 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Js测试</title>
-<script type="text/javascript" language="javascript" >
-   function getQueryString(name) {
-	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-    var r = window.location.search.substr(1).match(reg);
-    if (r != null) return unescape(r[2]); return null;
-    }
-	
-  function GetRequest() {
-   var url = location.search; //获取url中"?"符后的字串
-   var theRequest = new Object();
-   if (url.indexOf("?") != -1) {
-      var str = url.substr(1);
-      strs = str.split("&");
-      for(var i = 0; i < strs.length; i ++) {
-         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
-      }
-    }
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Js测试</title>
+		<script type="text/javascript" language="javascript">
+			function getQueryString(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+				var r = window.location.search.substr(1).match(reg);
+				if (r != null) return unescape(r[2]);
+				return null;
+			}
 
-	return theRequest;
-  }
-  function output(){
-	   var Request = new Object();
-	   Request = GetRequest();
-	   var parm1,parm2;
-	   parm1 = Request['parm1'];
-	   parm2 = Request['parm2'];
-	   if(parm1.length>0)
-	   {
-		   document.writeln("parm1 " + parm1 + '<br>'); //提示: "helloyzl"
-	   }
-	   if(parm2.length){
-		   document.writeln("parm2 " + parm2); //提示: "helloyzl"
-	    }
-	   
-  }
-  output()
-</script>
-</head>
+			function GetRequest() {
+				var url = location.search; //获取url中"?"符后的字串
+				var theRequest = new Object();
+				if (url.indexOf("?") != -1) {
+					var str = url.substr(1);
+					strs = str.split("&");
+					for (var i = 0; i < strs.length; i++) {
+						theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+					}
+				}
+				return theRequest;
+			}
 
-<body>
+			function output() {
+				var Request = new Object();
+				Request = GetRequest();
+				var parm1, parm2;
+				parm1 = Request['parm1'];
+				parm2 = Request['parm2'];
+				if (parm1.length > 0) {
+					document.writeln("parm1 " + parm1 + '<br>'); //提示: "helloyzl"
+				}
+				if (parm2.length) {
+					document.writeln("parm2 " + parm2); //提示: "helloyzl"
+				}
+
+			}
+			output()
+		</script>
+		</head>
+		<body>
 </body>
 </html>
