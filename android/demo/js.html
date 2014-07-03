@@ -20,13 +20,14 @@
          theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
       }
     }
-	for(var curItem in TheRequest)
+	for(var curItem in theRequest)
 	{
 		document.write(curItem+"");
 	}
+	return "";
   }
    
-   document.write("参数" + GetRequest())
+   document.write(GetRequest())
 </script>
 </head>
 
