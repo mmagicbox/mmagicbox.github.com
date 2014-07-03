@@ -24,15 +24,21 @@ function ShowFolderFileList(FilePath)
 
 	var galleryResult = {
 		"gallery": {
-			"page": 1,
-			"pages": 5,
-			"imgCount": 20,
-			"total": 91,
+			"curPage": 1,
+			"pages": 1,
+			"imgCount": 1,
+			"total": 1,
 			"nextPageUrl": "",
-			"imgRoot": "http://mmagicbox.github.io/android/home/room/indoor",
+			"imgRootUrl": "http://mmagicbox.github.io/android/home/indoor",
 			"imgList": []
 		}
 	};
+
+	var pageUrlRoot = "http://mmagicbox.github.io/android/home/indoor_get/";
+	var pageCount = 20;
+	var total = 81;
+	var pagesCount = total/pageCount;
+	
 	var i = 0;
 	var fileName;
 	
@@ -40,24 +46,36 @@ function ShowFolderFileList(FilePath)
 	var jsonPath = document.getElementById('jsonFilePath').value;
 	var jsonIndex = 1;
 	var jsonTextResult = "";
-	var pageCount = 20;
+
+	var totalCount = f.files.length;
 	for (; !fc.atEnd(); fc.moveNext()) {
 		fileName = fc.item().Name;
 		
-		var title = "图片"+i;
+		var title = "图片_"+(i+1);
 		var imageItem = {"name": fileName, "title": title};
 		galleryResult.gallery.imgList[i%pageCount] = imageItem;
 		jsonTextResult += fileName;
 		jsonTextResult+="\n";
 		if((i+1)%pageCount == 0)
 		{
+			if((i+1) != totalCount)
+			{
+				galleryResult.gallery.nextPageUrl = pageUrlRoot + "indoor_"+(jsonIndex+1)+".json";
+			}else
+			{
+				galleryResult.gallery.nextPageUrl = "";
+			}
+			galleryResult.gallery.pages = pagesCount;
 			galleryResult.gallery.imgCount = galleryResult.gallery.imgList.length;
+			//写json文件到本地
+			
 			writeFile(jsonPath + "indoor_"+jsonIndex+".json", JSON.stringify(galleryResult));
+			
 			jsonTextResult += JSON.stringify(galleryResult);
 			jsonTextResult+="\n";
 			
 			jsonIndex++;
-			galleryResult.gallery.page = jsonIndex;
+			galleryResult.gallery.curPage = jsonIndex;
 
 			galleryResult.gallery.imgList = [{}];
 		}
@@ -65,6 +83,7 @@ function ShowFolderFileList(FilePath)
 	}
 	if(fc.length%pageCount!=0)
 	{
+		galleryResult.gallery.nextPageUrl = "";
 		galleryResult.gallery.imgCount = galleryResult.gallery.imgList.length;
 		writeFile(jsonPath + "indoor_"+jsonIndex+".json", JSON.stringify(galleryResult));
 		jsonTextResult += JSON.stringify(galleryResult);
