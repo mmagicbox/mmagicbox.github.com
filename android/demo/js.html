@@ -19,9 +19,13 @@
       for(var i = 0; i < strs.length; i ++) {
          theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
       }
-   }
-   return theRequest;
-   }
+    }
+	for(var curItem in TheRequest)
+	{
+		document.write(curItem+"");
+	}
+  }
+   
    document.write("参数" + GetRequest())
 </script>
 </head>
