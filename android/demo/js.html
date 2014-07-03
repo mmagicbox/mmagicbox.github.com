@@ -20,18 +20,21 @@
          theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
       }
     }
-	for(var curItem in theRequest)
-	{
-		document.write(curItem+"");
-	}
-	return "";
+
+	return theRequest;
   }
-   
-   document.write(GetRequest())
+  function output(){
+	   var Request = new Object();
+	   Request = GetRequest();
+	   var parm1,parm2;
+	   parm1 = Request['parm1'];
+	   parm2 = Request['parm2'];
+	   document.write(parm1 + " " + parm2); //提示: "helloyzl"
+  }
+  output()
 </script>
 </head>
 
 <body>
-
 </body>
 </html>
