@@ -20,7 +20,7 @@
          theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
       }
    }
-   return theRequest.toString();
+   return theRequest;
    }
    document.write("参数" + GetRequest())
 </script>
