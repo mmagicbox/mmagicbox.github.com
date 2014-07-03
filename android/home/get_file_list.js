@@ -34,9 +34,14 @@ function ShowFolderFileList(FilePath) {
     };
 
     var pageUrlRoot = "http://mmagicbox.github.io/android/home/indoor_get/";
-    var pageCount = 20;
+    var perPageCount = 20;
     var total = 81;
-    var pagesCount = total / pageCount;
+    var pagesCount = Math.floor(total / perPageCount);
+
+    if(total%perPageCount != 0)
+    {
+        pagesCount++;
+    }
 
     var i = 0;
     var fileName;
@@ -52,10 +57,10 @@ function ShowFolderFileList(FilePath) {
 
         var title = "图片_" + (i + 1);
         var imageItem = {"name": fileName, "title": title};
-        galleryResult.gallery.imgList[i % pageCount] = imageItem;
+        galleryResult.gallery.imgList[i % perPageCount] = imageItem;
         jsonTextResult += fileName;
         jsonTextResult += "\n";
-        if ((i + 1) % pageCount == 0) {
+        if ((i + 1) % perPageCount == 0) {
             if ((i + 1) != totalCount) {
                 galleryResult.gallery.nextPageUrl = pageUrlRoot + "indoor_" + (jsonIndex + 1) + ".json";
             } else {
@@ -79,7 +84,7 @@ function ShowFolderFileList(FilePath) {
         }
         i++;
     }
-    if (fc.length % pageCount != 0) {
+    if (fc.length % perPageCount != 0) {
         galleryResult.gallery.nextPageUrl = "";
         galleryResult.gallery.imgCount = galleryResult.gallery.imgList.length;
         writeFile(jsonPath + "indoor_" + jsonIndex + ".json", JSON.stringify(galleryResult));
