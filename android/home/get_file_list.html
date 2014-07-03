@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+.button {
+	width: 50%;
+	padding-top: 6px;
+	padding-bottom: 6px
+}
+.label {
+	width: 100%;
+	padding-top: 6px;
+	padding-bottom: 6px
+}
+</style>
+<title>无标题文档</title>
+<script src="get_file_list.js" type="text/javascript" charset="gb2312" >
+</script>
+</head>
+<body>
+<p> 图片路径：
+<input id="imgPath" type="text"  value="E:\work\mmagicbox.github.com\android\home\indoor"
+			size="100%" 
+            class="label"/>
+<br>
+<br>
+生成的Json文件：
+<input id="jsonFilePath" type="text" class="label"  value="E:\work\mmagicbox.github.com\android\home\indoor_get\" />
+</p>
+<input type="button" value="读取图片列表" onclick="ShowFolderFileList(document.getElementById('imgPath').value)" class="button"
+			/>
+<textarea id="jsonText"  cols="100%"  rows="100%" style="width:100%" >
+			</textarea>
+<p> </p>
+</body>
+</html>
