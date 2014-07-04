@@ -7,29 +7,38 @@ function writeFile(filename, filecontent) {
 	}
 		
    f = fso.CreateTextFile(filename, 2, false);
-    f.Write(classObj.ToUnicode(filecontent));
+    f.Write(toUnicode(filecontent));
     f.Close();
 }
+function uniencode(text)
+{
+    text = escape(text.toString()).replace(/\+/g, "%2B");
+    var matches = text.match(/(%([0-9A-F]{2}))/gi);
+    if (matches)
+    {
+        for (var matchid = 0; matchid < matches.length; matchid++)
+        {
+            var code = matches[matchid].substring(1,3);
+            if (parseInt(code, 16) >= 128)
+            {
+                text = text.replace(matches[matchid], '%u00' + code);
+            }
+        }
+    }
+    text = text.replace('%25', '%u0025');
+ 
+    return text;
+}
+/**
+ * 中文转unicode字符工具
+ */
+function toUnicode(str) {
 
-
-var classObj= 
-{ 
-ToUnicode:function(str) 
-{ 
-return escape(str); 
-}, 
-
-UnUnicode:function(str) 
-{ 
-return unescape(str); 
-}, 
-
-copyingTxt:function(str) 
-{ 
-document.getElementById(str).select(); 
-document.execCommand("Copy"); 
-} 
-} 
+	var chinese =escape(str); //先使用js加密,该段加密后结果：%u5357%u67EF%u592A%u5B88
+    chinese = chinese.replace(/%u/g,"\\u");//然后使用js、正则表达式替换%为\号 这样一来该段文字最终的结果为：\u5357\u67EF\u592A\u5B88 。这个编码
+    chinese = unescape(chinese);
+	return chinese;
+}
 
 //参数为文件夹路径
 function ShowFolderFileList(FilePath) {
