@@ -6,7 +6,7 @@ function writeFile(filename, filecontent) {
 		fso.DeleteFile(filename, true); 
 	}
 		
-   f = fso.CreateTextFile(filename, 2, true);
+   f = fso.CreateTextFile(filename, 2, false);
     f.Write(filecontent);
     f.Close();
 }
