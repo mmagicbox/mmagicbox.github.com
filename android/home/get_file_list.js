@@ -2,11 +2,15 @@
 function writeFile(filename, filecontent) {
     var fso, f, s;
     fso = new ActiveXObject("Scripting.FileSystemObject");
-
-    f = fso.OpenTextFile(filename, 2, true);
+	if(fso.FileExists(filename)){
+		fso.DeleteFile(filename, true); 
+	}
+		
+   f = fso.CreateTextFile(filename, 2, true);
     f.Write(filecontent);
     f.Close();
 }
+
 //参数为文件夹路径
 function ShowFolderFileList(FilePath) {
     var fso, f, fc;
