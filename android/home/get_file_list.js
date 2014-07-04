@@ -7,9 +7,29 @@ function writeFile(filename, filecontent) {
 	}
 		
    f = fso.CreateTextFile(filename, 2, false);
-    f.Write(filecontent);
+    f.Write(classObj.ToUnicode(filecontent));
     f.Close();
 }
+
+
+var classObj= 
+{ 
+ToUnicode:function(str) 
+{ 
+return escape(str); 
+}, 
+
+UnUnicode:function(str) 
+{ 
+return unescape(str); 
+}, 
+
+copyingTxt:function(str) 
+{ 
+document.getElementById(str).select(); 
+document.execCommand("Copy"); 
+} 
+} 
 
 //参数为文件夹路径
 function ShowFolderFileList(FilePath) {
